@@ -16,7 +16,6 @@
   font-size: 2rem;
   margin-bottom: 30px;
   max-width: 80%;
-  text-align: justify;
 }
 
 .sobre__text a {
@@ -29,23 +28,59 @@
   color: #00aeff;
 }
 
-.sobre__item img {
+.sobre__img {
+  position: relative;
+}
+
+.sobre__img img {
   max-width: 300px;
   border-radius: 4px;
 }
 
+.sobre__img::after {
+  content: '';
+
+  border-radius: 4px;
+  background: linear-gradient(180deg, rgba(17, 17, 24, 0.3), rgb(17, 17, 24));
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
 @media screen and (max-width: 900px) {
-  /* LOGO */
-  .logo a {
-    font-size: 4rem;
+  body {
+    overflow: initial;
+  }
+
+  .sobre {
+    height: auto;
+  }
+
+  .sobre__item {
+    flex-direction: column;
   }
 
   .sobre__text h1 {
-    font-size: 4rem;
+    margin-top: 15rem;
+    font-size: 3.5rem;
   }
 
   .sobre__text p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
+    max-width: 100%;
     text-align: justify;
+    margin-bottom: 15px;
+  }
+
+  .sobre__text a {
+    font-size: 1.5rem;
+  }
+
+  .sobre__img img {
+    max-width: 250px;
+    margin-top: 50px;
   }
 }

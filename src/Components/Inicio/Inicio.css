@@ -24,6 +24,7 @@
   font-weight: 300;
   font-size: 2rem;
   margin-bottom: 30px;
+  max-width: 90%;
 }
 
 .inicio__text a {
@@ -47,11 +48,15 @@
   }
 
   .inicio__text h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
 
   .inicio__text p {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     text-align: justify;
+  }
+
+  .inicio__text a {
+    font-size: 1.5rem;
   }
 }

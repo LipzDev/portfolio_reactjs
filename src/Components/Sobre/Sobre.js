@@ -25,7 +25,9 @@ const Sobre = () => {
             <Link to="/projetos">Próximo →</Link>
           </div>
 
-          <img src={foto1} alt="Foto do criador do site!" />
+          <div className="sobre__img">
+            <img src={foto1} alt="Foto do criador do site!" />
+          </div>
         </div>
       </div>
     </section>
