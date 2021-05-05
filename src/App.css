@@ -11,7 +11,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
-  overflow-x: hidden;
+  overflow: hidden;
   background: #111114;
 }
 
@@ -36,7 +36,7 @@ span {
 }
 
 .container-w2 {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   width: 95%;
 }
@@ -50,6 +50,21 @@ span {
 }
 
 @keyframes efeito {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
+
+/* EFEITO HEADER */
+
+.efeito__header {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: 0.8s efeitoHeader forwards;
+}
+
+@keyframes efeitoHeader {
   to {
     opacity: initial;
     transform: initial;

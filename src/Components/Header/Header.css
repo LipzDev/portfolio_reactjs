@@ -3,7 +3,7 @@
   padding: 10px 0;
   position: fixed;
   width: 100%;
-  background: #111114;
+  background: transparent;
   z-index: 9999;
 }
 
@@ -13,8 +13,10 @@
   justify-content: space-between;
 }
 
-.logo img {
-  max-width: 70px;
+.logo a {
+  font-size: 5rem;
+  color: white;
+  font-weight: 500;
 }
 
 .menu__desktop ul {
@@ -28,14 +30,20 @@
 .menu__desktop a {
   font-size: 1.6rem;
   position: relative;
+  transition: 0.3s;
 }
 
-.active::after {
-  content: '';
-  background: white;
-  width: 100%;
-  height: 2px;
-  position: absolute;
-  bottom: -4px;
-  left: 0;
+@keyframes efeitoHeader {
+  to {
+    transform: initial;
+    opacity: initial;
+  }
+}
+
+.active {
+  color: #00aeff;
+}
+
+.menu__desktop a:hover {
+  color: #00aeff;
 }

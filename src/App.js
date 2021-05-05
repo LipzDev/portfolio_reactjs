@@ -6,12 +6,14 @@ import Sobre from './Components/Sobre/Sobre';
 import Projetos from './Components/Projetos/Projetos';
 import Repositorios from './Components/Repositorios/Repositorios';
 import Contato from './Components/Contato/Contato';
+import Particles from './Components/Particles/Particles';
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Header />
+        <Particles />
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="sobre" element={<Sobre />} />
