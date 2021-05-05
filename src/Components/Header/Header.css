@@ -1,5 +1,4 @@
 .header {
-  background: red;
   padding: 10px 0;
   position: fixed;
   width: 100%;
@@ -46,4 +45,53 @@
 
 .menu__desktop a:hover {
   color: #00aeff;
+}
+
+@media screen and (min-width: 900px) {
+  .menu__mobile {
+    display: none;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
+
+/* ESTILOS DO MENU MOBILE */
+
+@media screen and (max-width: 900px) {
+  .menu__desktop {
+    display: none;
+  }
+
+  .menu__mobile {
+    position: absolute;
+    transform: translateX(-200rem);
+    opacity: 0;
+    transition: 0.3s;
+    left: 0;
+    top: 0;
+
+    background: rgba(17, 17, 24, 0.6);
+    backdrop-filter: blur(12px);
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu__mobile.activeMenu {
+    transform: initial;
+    opacity: 1;
+  }
+
+  .menu__mobile li + li {
+    margin-top: 20px;
+  }
+
+  .menu__mobile a {
+    font-size: 2rem;
+  }
 }
