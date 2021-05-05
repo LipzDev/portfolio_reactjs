@@ -1,0 +1,32 @@
+.inicio__item {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.inicio__text h2 {
+  font-weight: 400;
+  font-size: 4rem;
+}
+.inicio__text span {
+  margin-left: 10px;
+}
+
+.inicio__text h1 {
+  font-weight: 600;
+  font-size: 8rem;
+}
+
+.inicio__text p {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.inicio__text a {
+  font-size: 2rem;
+  font-weight: 300;
+}
