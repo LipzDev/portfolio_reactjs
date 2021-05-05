@@ -12,7 +12,7 @@ const Sobre = () => {
       </Helmet>
       <div className="container">
         <div className="sobre__item">
-          <h1>SOBRE</h1>
+          <h1>THIAGO VIADÃUMM</h1>
         </div>
       </div>
     </section>
