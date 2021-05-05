@@ -3,5 +3,49 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  flex-direction: column;
+}
+
+.sobre__text h1 {
+  font-weight: 600;
+  font-size: 8rem;
+}
+
+.sobre__text p {
+  margin-top: 10px;
+  font-weight: 300;
+  font-size: 2rem;
+  margin-bottom: 30px;
+  max-width: 80%;
+  text-align: justify;
+}
+
+.sobre__text a {
+  font-size: 2rem;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.sobre__text a:hover {
+  color: #00aeff;
+}
+
+.sobre__item img {
+  max-width: 300px;
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 900px) {
+  /* LOGO */
+  .logo a {
+    font-size: 4rem;
+  }
+
+  .sobre__text h1 {
+    font-size: 4rem;
+  }
+
+  .sobre__text p {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
 }

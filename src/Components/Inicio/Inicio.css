@@ -35,3 +35,23 @@
 .inicio__text a:hover {
   color: #00aeff;
 }
+
+@media screen and (max-width: 900px) {
+  /* LOGO */
+  .logo a {
+    font-size: 4rem;
+  }
+
+  .inicio__text h2 {
+    font-size: 2rem;
+  }
+
+  .inicio__text h1 {
+    font-size: 4rem;
+  }
+
+  .inicio__text p {
+    font-size: 1.8rem;
+    text-align: justify;
+  }
+}

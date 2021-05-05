@@ -1,5 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import foto1 from '../../Assets/foto.jpg';
 import './Sobre.css';
 
 const Sobre = () => {
@@ -10,9 +12,20 @@ const Sobre = () => {
         <meta name="description" content="Página sobre" />
         <title>Sobre</title>
       </Helmet>
-      <div className="container">
+      <div className="container-w2">
         <div className="sobre__item">
-          <h1>THIAGO VIADÃUMM</h1>
+          <div className="sobre__text">
+            <h1>Sobre</h1>
+            <p>
+              Tenho 22 anos e estou cursando Análise e Desenvolvimento de
+              Sistemas! Moro em Dracena-SP e atualmente um dos meus principais
+              objetivos é entrar no mercado de TI como programador Front-End
+              Júnior!
+            </p>
+            <Link to="/projetos">Próximo →</Link>
+          </div>
+
+          <img src={foto1} alt="Foto do criador do site!" />
         </div>
       </div>
     </section>
