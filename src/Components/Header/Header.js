@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import Hamburguer from './Hamburguer/Hamburguer';
-import { OpenMenu } from './Hamburguer/Hamburguer';
+import { OpenMenu as CloseMenu } from './Hamburguer/Hamburguer';
 import './Header.css';
 
 const Header = () => {
@@ -41,27 +41,27 @@ const Header = () => {
           <nav className="menu__mobile">
             <ul>
               <li>
-                <NavLink to="/" end onClick={OpenMenu}>
+                <NavLink to="/" end onClick={CloseMenu}>
                   Início
                 </NavLink>
               </li>
               <li>
-                <NavLink to="sobre" onClick={OpenMenu}>
+                <NavLink to="sobre" onClick={CloseMenu}>
                   Sobre
                 </NavLink>
               </li>
               <li>
-                <NavLink to="projetos" onClick={OpenMenu}>
+                <NavLink to="projetos" onClick={CloseMenu}>
                   Projetos
                 </NavLink>
               </li>
               <li>
-                <NavLink to="repositorios" onClick={OpenMenu}>
+                <NavLink to="repositorios" onClick={CloseMenu}>
                   Repositórios
                 </NavLink>
               </li>
               <li>
-                <NavLink to="contato" onClick={OpenMenu}>
+                <NavLink to="contato" onClick={CloseMenu}>
                   Contato
                 </NavLink>
               </li>
