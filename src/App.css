@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  vertical-align: middle;
+  text-decoration: none;
+  list-style: none;
+}
+
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  background: #111114;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+h1,
+h2,
+h3,
+h4,
+a,
+p,
+span {
+  color: white;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+.container-w2 {
+  max-width: 1000px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+/* EFEITO TRANSIÇÃO DAS PAGINAS */
+
+.efeito__transicao {
+  opacity: 0;
+  transform: translateX(-200px);
+  animation: 0.8s efeito forwards;
+}
+
+@keyframes efeito {
+  to {
+    opacity: initial;
+    transform: initial;
+  }
+}
