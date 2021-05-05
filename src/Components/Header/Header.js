@@ -1,5 +1,7 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import Hamburguer from './Hamburguer/Hamburguer';
+import { OpenMenu } from './Hamburguer/Hamburguer';
 import './Header.css';
 
 const Header = () => {
@@ -28,6 +30,40 @@ const Header = () => {
               </li>
               <li>
                 <NavLink to="contato">Contato</NavLink>
+              </li>
+            </ul>
+          </nav>
+
+          {/* ICON */}
+
+          <Hamburguer />
+
+          <nav className="menu__mobile">
+            <ul>
+              <li>
+                <NavLink to="/" end onClick={OpenMenu}>
+                  Início
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="sobre" onClick={OpenMenu}>
+                  Sobre
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="projetos" onClick={OpenMenu}>
+                  Projetos
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="repositorios" onClick={OpenMenu}>
+                  Repositórios
+                </NavLink>
+              </li>
+              <li>
+                <NavLink to="contato" onClick={OpenMenu}>
+                  Contato
+                </NavLink>
               </li>
             </ul>
           </nav>
