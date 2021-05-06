@@ -1,7 +1,24 @@
-.repositorios__item {
+.repositorios {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  flex-direction: column;
+}
+
+.repositorios__item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.repositorios__box {
+  border: 1px solid white;
+  width: 30%;
+  height: 90px;
+}
+
+.repo__desc img {
+  width: 90px;
+  border-radius: 50%;
 }
