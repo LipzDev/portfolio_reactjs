@@ -9,7 +9,7 @@ const Repositorios = () => {
   React.useEffect(() => {
     async function ApiRequest() {
       const response = await fetch(
-        `https://api.github.com/users/LipzDev/repos?page=1&per_page=9`,
+        `https://api.github.com/users/LipzDev/repos?per_page=12&page=2`,
       );
       const json = await response.json();
       setItem(json);
@@ -20,6 +20,7 @@ const Repositorios = () => {
   React.useEffect(() => {
     const getTopRepositories =
       item &&
+      !item.fork &&
       item.sort((first, second) =>
         first.created_at < second.created_at ? 1 : -1,
       );
@@ -31,6 +32,10 @@ const Repositorios = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content="Página de repositórios do github." />
+        <script
+          src="https://kit.fontawesome.com/e6b1f34d6c.js"
+          crossorigin="anonymous"
+        ></script>
         <title>Repositórios</title>
       </Helmet>
       <div className="container-w2">
@@ -38,10 +43,23 @@ const Repositorios = () => {
           {topRepositories &&
             topRepositories.map((repo) => (
               <div className="repositorios__box" key={repo.id}>
-                <h3>{repo.name}</h3>
-                <p>{repo.description}</p>
-                <a href={repo.html_url}>Visitar</a>
-                <p>Criado em {repo.created_at}</p>
+                <div className="repo__name">
+                  <a href={repo.html_url}>
+                    <i class="fas fa-book"></i>
+                    {repo.name}
+                  </a>
+                  <p>{repo.description}</p>
+                  <div className="repo__stats">
+                    <div className="stats__content">
+                      <p>Linguagem</p>
+                      <span>
+                        <i class="far fa-star"></i>
+                        {repo.stargazers_count}
+                      </span>
+                    </div>
+                    <a href={repo.html_url}>Visitar</a>
+                  </div>
+                </div>
               </div>
             ))}
         </div>
