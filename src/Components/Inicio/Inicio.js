@@ -21,7 +21,7 @@ const Inicio = () => {
             <h1>Seja bem vindo !</h1>
             <p>
               Eu sou o Filipe, este é o meu portfólio! Espero que você tenha uma
-              ótima experiência em meu website!
+              ótima experiência visitando meu website!
             </p>
             <Next route="/sobre" />
           </div>

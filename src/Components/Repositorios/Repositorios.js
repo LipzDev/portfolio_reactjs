@@ -55,7 +55,7 @@ const Repositorios = () => {
               <div className="repositorios__box" key={repo.id}>
                 <div className="repo__name">
                   <a href={repo.html_url}>
-                    <i class="fas fa-book"></i>
+                    <i className="fas fa-book"></i>
                     {repo.name}
                   </a>
                   <p>{repo.description}</p>
@@ -63,7 +63,7 @@ const Repositorios = () => {
                     <div className="stats__content">
                       <p>{repo.language}</p>
                       <span>
-                        <i class="far fa-star"></i>
+                        <i className="far fa-star"></i>
                         {repo.stargazers_count}
                       </span>
                     </div>
@@ -72,7 +72,9 @@ const Repositorios = () => {
                 </div>
               </div>
             ))}
-          <Next route="/contato" />
+          <div className="next-section-repo">
+            <Next route="/contato" />
+          </div>
         </div>
       </div>
     </section>

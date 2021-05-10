@@ -15,8 +15,12 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   width: 400px;
   border-radius: 10px;
-  height: 120px;
+  height: auto;
   padding: 10px;
+}
+
+.next-section-repo {
+  margin-top: 30px;
 }
 
 .repo__desc img {
@@ -39,7 +43,6 @@
   color: #58a6f0;
   font-weight: 600;
   font-size: 1.5rem;
-  margin-bottom: 5px;
 }
 
 .repo__name a i {
@@ -96,7 +99,7 @@
 
   .repositorios h1 {
     font-size: 2.5rem;
-    font-weight: 500;
+    font-weight: 200;
   }
 
   .repositorios__box {
