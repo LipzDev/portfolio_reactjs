@@ -60,6 +60,10 @@
 /* ESTILOS DO MENU MOBILE */
 
 @media screen and (max-width: 900px) {
+  .header-movel {
+    background: #111118;
+  }
+
   .menu__desktop {
     display: none;
   }

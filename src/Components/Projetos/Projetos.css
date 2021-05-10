@@ -32,7 +32,7 @@
   content: '\f06e';
   font-family: FontAwesome;
   font-size: 2.5rem;
-  color: #ccc;
+  color: rgba(255, 255, 255, 0.2);
 
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(12px);
@@ -84,6 +84,7 @@
 
   .projetos h1 {
     font-size: 2.5rem;
+    font-weight: 500;
   }
 
   .projetos__content {
