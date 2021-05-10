@@ -18,16 +18,6 @@
   max-width: 80%;
 }
 
-.sobre__text a {
-  font-size: 2rem;
-  font-weight: 300;
-  transition: 0.3s;
-}
-
-.sobre__text a:hover {
-  color: #00aeff;
-}
-
 .sobre__img {
   position: relative;
 }

@@ -55,14 +55,10 @@
   left: 0;
 }
 
-.projetos__item a {
-  font-size: 2rem;
-  font-weight: 300;
-  transition: 0.3s;
-}
-
-.projetos__item a:hover {
-  color: #00aeff;
+.projetos h1 {
+  font-size: 4rem;
+  font-weight: 200;
+  margin-bottom: 15px;
 }
 
 @media screen and (max-width: 1024px) {
@@ -86,17 +82,17 @@
     padding: 15rem 0 5rem 0;
   }
 
+  .projetos h1 {
+    font-size: 2.5rem;
+  }
+
   .projetos__content {
     flex-wrap: wrap;
     align-content: center;
     flex-direction: column;
   }
 
-  .projetos__overlay {
-    max-width: 90%;
-  }
-
-  .projetos__item a {
-    font-size: 1.5rem;
+  .projetos__content img {
+    width: 100%;
   }
 }

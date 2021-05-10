@@ -27,16 +27,6 @@
   max-width: 90%;
 }
 
-.inicio__text a {
-  font-size: 2rem;
-  font-weight: 300;
-  transition: 0.3s;
-}
-
-.inicio__text a:hover {
-  color: #00aeff;
-}
-
 @media screen and (max-width: 900px) {
   /* LOGO */
   .logo a {
@@ -54,9 +44,5 @@
   .inicio__text p {
     font-size: 1.5rem;
     text-align: justify;
-  }
-
-  .inicio__text a {
-    font-size: 1.5rem;
   }
 }

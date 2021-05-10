@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import Next from '../Next-page/Next';
 import './Inicio.css';
 
 const Inicio = () => {
@@ -23,7 +23,7 @@ const Inicio = () => {
               Eu sou o Filipe, este é o meu portfólio! Espero que você tenha uma
               ótima experiência em meu website!
             </p>
-            <Link to="sobre">Próximo →</Link>
+            <Next route="/sobre" />
           </div>
         </div>
       </div>

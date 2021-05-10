@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
+import Next from '../Next-page/Next';
 import site1 from './Assets/site1.png';
 import site2 from './Assets/site2.png';
 import site3 from './Assets/site3.png';
@@ -26,6 +26,7 @@ const Projetos = () => {
       </Helmet>
       <div className="container-w2">
         <div className="projetos__item">
+          <h1>Projetos recentes</h1>
           <div className="projetos__content">
             <a href="#" className="projetos__overlay">
               <img src={site1} alt="Preview do site 1" />
@@ -46,7 +47,7 @@ const Projetos = () => {
               <img src={site6} alt="Preview do site 6" />
             </a>
           </div>
-          <Link to="/repositorios">Próximo →</Link>
+          <Next route="/repositorios" />
         </div>
       </div>
     </section>
