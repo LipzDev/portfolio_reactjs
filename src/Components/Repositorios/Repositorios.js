@@ -1,17 +1,22 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
+import { Link } from 'react-router-dom';
+import Next from '../Next-page/Next';
 import './Repositorios.css';
 
 const Repositorios = () => {
   const [item, setItem] = React.useState(null);
   const [topRepositories, setTopRepositories] = React.useState(null);
+  const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
     async function ApiRequest() {
+      setLoading(true);
       const response = await fetch(
         `https://api.github.com/users/LipzDev/repos?per_page=12&page=2`,
       );
       const json = await response.json();
+      setLoading(false);
       setItem(json);
     }
     ApiRequest();
@@ -39,6 +44,11 @@ const Repositorios = () => {
         <title>Repositórios</title>
       </Helmet>
       <div className="container-w2">
+        {loading === true ? (
+          <h1>Carregando...</h1>
+        ) : (
+          <h1>Repositórios recentes</h1>
+        )}
         <div className="repositorios__item">
           {topRepositories &&
             topRepositories.map((repo) => (
@@ -51,7 +61,7 @@ const Repositorios = () => {
                   <p>{repo.description}</p>
                   <div className="repo__stats">
                     <div className="stats__content">
-                      <p>Linguagem</p>
+                      <p>{repo.language}</p>
                       <span>
                         <i class="far fa-star"></i>
                         {repo.stargazers_count}
@@ -62,6 +72,7 @@ const Repositorios = () => {
                 </div>
               </div>
             ))}
+          <Next route="/contato" />
         </div>
       </div>
     </section>

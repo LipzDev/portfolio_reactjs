@@ -1,0 +1,15 @@
+.next-section {
+  font-size: 2rem;
+  font-weight: 300;
+  transition: 0.3s;
+}
+
+.next-section:hover {
+  color: #00aeff;
+}
+
+@media screen and (max-width: 900px) {
+  .next-section {
+    font-size: 1.5rem;
+  }
+}

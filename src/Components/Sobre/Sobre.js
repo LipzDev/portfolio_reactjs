@@ -1,7 +1,7 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
 import foto1 from '../../Assets/foto.jpg';
+import Next from '../Next-page/Next';
 import './Sobre.css';
 
 const Sobre = () => {
@@ -22,7 +22,7 @@ const Sobre = () => {
               objetivos é entrar no mercado de TI como programador Front-End
               Júnior!
             </p>
-            <Link to="/projetos">Próximo →</Link>
+            <Next route="/projetos" />
           </div>
 
           <div className="sobre__img">
