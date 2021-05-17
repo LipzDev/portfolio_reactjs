@@ -32,6 +32,9 @@ const Projetos = () => {
               href="https://lipzdev.github.io/Copia-Wordpress-Site/"
               className="projetos__overlay"
               target="_blank"
+              rel="
+              noopener
+              noreferrer"
             >
               <img src={site1} alt="Preview do site 1" />
             </a>
@@ -39,6 +42,9 @@ const Projetos = () => {
               href="https://lipzdev.github.io/Consultoria-Site/"
               className="projetos__overlay"
               target="_blank"
+              rel="
+              noopener
+              noreferrer"
             >
               <img src={site2} alt="Preview do site 2" />
             </a>
@@ -46,6 +52,9 @@ const Projetos = () => {
               href="https://lipzdev.github.io/Space-Site/"
               className="projetos__overlay"
               target="_blank"
+              rel="
+              noopener
+              noreferrer"
             >
               <img src={site3} alt="Preview do site 3" />
             </a>
@@ -53,6 +62,9 @@ const Projetos = () => {
               href="https://lipzdev.github.io/SaoPaulo-Site/"
               className="projetos__overlay"
               target="_blank"
+              rel="
+              noopener
+              noreferrer"
             >
               <img src={site4} alt="Preview do site 4" />
             </a>
@@ -60,6 +72,9 @@ const Projetos = () => {
               href="https://lipzdev.github.io/AU-Boreal-Site/"
               className="projetos__overlay"
               target="_blank"
+              rel="
+              noopener
+              noreferrer"
             >
               <img src={site5} alt="Preview do site 5" />
             </a>
@@ -67,6 +82,9 @@ const Projetos = () => {
               href="https://lipzdev.github.io/Bulkfollows-Site/"
               className="projetos__overlay"
               target="_blank"
+              rel="
+              noopener
+              noreferrer"
             >
               <img src={site6} alt="Preview do site 6" />
             </a>

@@ -16,7 +16,13 @@ const Contato = () => {
       </Helmet>
       <div className="container">
         <div className="contato__item">
-          <a href="https://www.facebook.com/filipe.gomes.14019" target="_blank">
+          <a
+            href="https://www.facebook.com/filipe.gomes.14019"
+            target="_blank"
+            rel="
+              noopener
+              noreferrer"
+          >
             <img src={icon1} alt="Icone do Facebook" />
             <span>Facebook</span>
             <p>Visitar</p>
@@ -26,12 +32,24 @@ const Contato = () => {
             <span>Whatsapp</span>
             <p>Visitar</p>
           </a>
-          <a href="https://www.linkedin.com/in/lipzdev/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/lipzdev/"
+            target="_blank"
+            rel="
+              noopener
+              noreferrer"
+          >
             <img src={icon3} alt="Icone do LinkedIn" />
             <span>LinkedIn</span>
             <p>Visitar</p>
           </a>
-          <a href="https://github.com/LipzDev" target="_blank">
+          <a
+            href="https://github.com/LipzDev"
+            target="_blank"
+            rel="
+              noopener
+              noreferrer"
+          >
             <img src={icon4} alt="Icone do Github" />
             <span>GitHub</span>
             <p>Visitar</p>
