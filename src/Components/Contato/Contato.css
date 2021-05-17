@@ -45,3 +45,27 @@
   opacity: 0;
   transform: translateY(30px);
 }
+
+@media screen and (max-width: 900px) {
+  .contato__item {
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: auto;
+    padding: 15rem 0 5rem 0;
+  }
+
+  .contato__item a {
+    padding: 10px;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+
+  .contato__item a + a {
+    margin-left: 0;
+  }
+
+  .contato__item a:hover > p {
+    transform: translateY(-23px);
+  }
+}

@@ -20,7 +20,7 @@
 }
 
 .next-section-repo {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .repo__desc img {
@@ -98,8 +98,8 @@
   }
 
   .repositorios h1 {
-    font-size: 2.5rem;
-    font-weight: 200;
+    font-size: 3rem;
+    font-weight: 300;
   }
 
   .repositorios__box {
