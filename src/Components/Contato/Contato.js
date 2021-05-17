@@ -16,22 +16,22 @@ const Contato = () => {
       </Helmet>
       <div className="container">
         <div className="contato__item">
-          <a href="#">
+          <a href="https://www.facebook.com/filipe.gomes.14019" target="_blank">
             <img src={icon1} alt="Icone do Facebook" />
             <span>Facebook</span>
             <p>Visitar</p>
           </a>
-          <a href="#">
+          <a href="https://api.whatsapp.com/send/?phone=5518996855200&text=Olá Filipe Gomes... &app_absent=0">
             <img src={icon2} alt="Icone do Whatsapp" />
             <span>Whatsapp</span>
             <p>Visitar</p>
           </a>
-          <a href="#">
+          <a href="https://www.linkedin.com/in/lipzdev/" target="_blank">
             <img src={icon3} alt="Icone do LinkedIn" />
             <span>LinkedIn</span>
             <p>Visitar</p>
           </a>
-          <a href="#">
+          <a href="https://github.com/LipzDev" target="_blank">
             <img src={icon4} alt="Icone do Github" />
             <span>GitHub</span>
             <p>Visitar</p>

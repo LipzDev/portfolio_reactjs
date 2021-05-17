@@ -28,22 +28,46 @@ const Projetos = () => {
         <div className="projetos__item">
           <h1>Projetos recentes</h1>
           <div className="projetos__content">
-            <a href="#" className="projetos__overlay">
+            <a
+              href="https://lipzdev.github.io/Copia-Wordpress-Site/"
+              className="projetos__overlay"
+              target="_blank"
+            >
               <img src={site1} alt="Preview do site 1" />
             </a>
-            <a href="#" className="projetos__overlay">
+            <a
+              href="https://lipzdev.github.io/Consultoria-Site/"
+              className="projetos__overlay"
+              target="_blank"
+            >
               <img src={site2} alt="Preview do site 2" />
             </a>
-            <a href="#" className="projetos__overlay">
+            <a
+              href="https://lipzdev.github.io/Space-Site/"
+              className="projetos__overlay"
+              target="_blank"
+            >
               <img src={site3} alt="Preview do site 3" />
             </a>
-            <a href="#" className="projetos__overlay">
+            <a
+              href="https://lipzdev.github.io/SaoPaulo-Site/"
+              className="projetos__overlay"
+              target="_blank"
+            >
               <img src={site4} alt="Preview do site 4" />
             </a>
-            <a href="#" className="projetos__overlay">
+            <a
+              href="https://lipzdev.github.io/AU-Boreal-Site/"
+              className="projetos__overlay"
+              target="_blank"
+            >
               <img src={site5} alt="Preview do site 5" />
             </a>
-            <a href="#" className="projetos__overlay">
+            <a
+              href="https://lipzdev.github.io/Bulkfollows-Site/"
+              className="projetos__overlay"
+              target="_blank"
+            >
               <img src={site6} alt="Preview do site 6" />
             </a>
           </div>

@@ -43,11 +43,7 @@ const Repositorios = () => {
         <title>Repositórios</title>
       </Helmet>
       <div className="container-w2">
-        {loading === true ? (
-          <h1>Carregando...</h1>
-        ) : (
-          <h1>Repositórios recentes</h1>
-        )}
+        {loading ? <h1>Carregando...</h1> : <h1>Repositórios recentes</h1>}
         <div className="repositorios__item">
           {topRepositories?.map((repo) => (
             <div className="repositorios__box" key={repo.id}>
