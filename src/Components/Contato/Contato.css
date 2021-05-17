@@ -47,18 +47,33 @@
 }
 
 @media screen and (max-width: 900px) {
-  .contato__item {
-    flex-wrap: wrap;
-    flex-direction: column;
+  .contato {
     height: auto;
     padding: 15rem 0 5rem 0;
   }
 
+  .contato__item {
+    height: auto;
+    flex-direction: column;
+  }
+
   .contato__item a {
     padding: 10px;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
     font-size: 1.5rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
     font-weight: 300;
+  }
+
+  .contato__item a + a {
+    margin-top: 20px;
+  }
+
+  .contato__item img {
+    max-width: 80px;
   }
 
   .contato__item a + a {

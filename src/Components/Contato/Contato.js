@@ -26,12 +26,12 @@ const Contato = () => {
             <span>Whatsapp</span>
             <p>Visitar</p>
           </a>
-          <a href="#" className="efeito__icon">
+          <a href="#">
             <img src={icon3} alt="Icone do LinkedIn" />
             <span>LinkedIn</span>
             <p>Visitar</p>
           </a>
-          <a href="#" className="efeito__icon">
+          <a href="#">
             <img src={icon4} alt="Icone do Github" />
             <span>GitHub</span>
             <p>Visitar</p>
