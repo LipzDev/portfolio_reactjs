@@ -22,7 +22,6 @@ const Projetos = () => {
           src="https://kit.fontawesome.com/e6b1f34d6c.js"
           crossorigin="anonymous"
         ></script>
-        <title>Projetos</title>
       </Helmet>
       <div className="container-w2">
         <div className="projetos__item">

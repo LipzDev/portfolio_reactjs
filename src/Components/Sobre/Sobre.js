@@ -10,7 +10,6 @@ const Sobre = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content="Página sobre" />
-        <title>Sobre</title>
       </Helmet>
       <div className="container-w2">
         <div className="sobre__item">
