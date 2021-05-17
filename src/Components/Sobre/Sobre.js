@@ -19,8 +19,8 @@ const Sobre = () => {
             <p>
               Tenho 22 anos e estou cursando Análise e Desenvolvimento de
               Sistemas! Moro em Dracena-SP e atualmente um dos meus principais
-              objetivos é entrar no mercado de TI como programador Front-End
-              Júnior!
+              objetivos é entrar no mercado de trabalho na área de TI como
+              programador Front-End Júnior!
             </p>
             <Next route="/projetos" />
           </div>

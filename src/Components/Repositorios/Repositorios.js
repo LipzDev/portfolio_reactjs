@@ -1,6 +1,5 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import { Link } from 'react-router-dom';
 import Next from '../Next-page/Next';
 import './Repositorios.css';
 
@@ -50,29 +49,30 @@ const Repositorios = () => {
           <h1>Repositórios recentes</h1>
         )}
         <div className="repositorios__item">
-          {topRepositories &&
-            topRepositories.map((repo) => (
-              <div className="repositorios__box" key={repo.id}>
-                <div className="repo__name">
-                  <a href={repo.html_url}>
-                    <i class="fas fa-book"></i>
-                    {repo.name}
-                  </a>
-                  <p>{repo.description}</p>
-                  <div className="repo__stats">
-                    <div className="stats__content">
-                      <p>{repo.language}</p>
-                      <span>
-                        <i class="far fa-star"></i>
-                        {repo.stargazers_count}
-                      </span>
-                    </div>
-                    <a href={repo.html_url}>Visitar</a>
+          {topRepositories?.map((repo) => (
+            <div className="repositorios__box" key={repo.id}>
+              <div className="repo__name">
+                <a href={repo.html_url}>
+                  <i className="fas fa-book"></i>
+                  {repo.name}
+                </a>
+                <p>{repo.description}</p>
+                <div className="repo__stats">
+                  <div className="stats__content">
+                    <p>{repo.language}</p>
+                    <span>
+                      <i className="far fa-star"></i>
+                      {repo.stargazers_count}
+                    </span>
                   </div>
+                  <a href={repo.html_url}>Visitar</a>
                 </div>
               </div>
-            ))}
-          <Next route="/contato" />
+            </div>
+          ))}
+          <div className="next-section-repo">
+            <Next route="/contato" />
+          </div>
         </div>
       </div>
     </section>

@@ -8,15 +8,19 @@
 .repositorios__item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-gap: 20px;
 }
 
 .repositorios__box {
   border: 1px solid rgba(255, 255, 255, 0.2);
-  width: 400px;
+  width: 100%;
   border-radius: 10px;
-  height: 120px;
+  height: auto;
   padding: 10px;
+}
+
+.next-section-repo {
+  margin-top: 10px;
 }
 
 .repo__desc img {
@@ -39,7 +43,6 @@
   color: #58a6f0;
   font-weight: 600;
   font-size: 1.5rem;
-  margin-bottom: 5px;
 }
 
 .repo__name a i {
@@ -84,6 +87,16 @@
   margin-bottom: 15px;
 }
 
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+  .repositorios__item {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .repositorios__box {
+    width: 100%;
+  }
+}
+
 @media screen and (max-width: 900px) {
   .repositorios {
     height: auto;
@@ -95,8 +108,8 @@
   }
 
   .repositorios h1 {
-    font-size: 2.5rem;
-    font-weight: 500;
+    font-size: 2.8rem;
+    font-weight: 300;
   }
 
   .repositorios__box {
