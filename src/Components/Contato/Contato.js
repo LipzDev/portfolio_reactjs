@@ -12,6 +12,7 @@ const Contato = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content="Página de formulário de contato" />
+        <title>Portfólio | Contato</title>
       </Helmet>
       <div className="container">
         <div className="contato__item">
