@@ -26,10 +26,22 @@
 
 .contato__item p {
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .contato__item a:hover > p {
-  transform: translateY(5px);
+  position: relative;
+  transform: translateY(-30px);
   opacity: 1;
+  color: #00aeff;
+}
+
+.contato__item span {
+  opacity: 1;
+  transition: 0.3s;
+}
+
+.contato__item a:hover > span {
+  opacity: 0;
+  transform: translateY(30px);
 }

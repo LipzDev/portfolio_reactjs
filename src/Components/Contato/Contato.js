@@ -18,19 +18,23 @@ const Contato = () => {
         <div className="contato__item">
           <a href="#">
             <img src={icon1} alt="Icone do Facebook" />
-            <p>Facebook</p>
+            <span>Facebook</span>
+            <p>Visitar</p>
           </a>
           <a href="#">
             <img src={icon2} alt="Icone do Whatsapp" />
-            <p>Whatsapp</p>
+            <span>Whatsapp</span>
+            <p>Visitar</p>
           </a>
           <a href="#" className="efeito__icon">
             <img src={icon3} alt="Icone do LinkedIn" />
-            <p>LinkedIn</p>
+            <span>LinkedIn</span>
+            <p>Visitar</p>
           </a>
           <a href="#" className="efeito__icon">
             <img src={icon4} alt="Icone do Github" />
-            <p>GitHub</p>
+            <span>GitHub</span>
+            <p>Visitar</p>
           </a>
         </div>
       </div>
