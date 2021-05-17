@@ -53,6 +53,7 @@ span {
   to {
     opacity: initial;
     transform: initial;
+    /* COMENTARIO */
   }
 }
 
