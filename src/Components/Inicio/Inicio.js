@@ -9,7 +9,6 @@ const Inicio = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content="Página inicial do meu portfólio!" />
-        <title>Filipe Gomes | Portfólio</title>
       </Helmet>
       <div className="container-w2">
         <div className="inicio__item">

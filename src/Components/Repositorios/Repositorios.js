@@ -40,7 +40,6 @@ const Repositorios = () => {
           src="https://kit.fontawesome.com/e6b1f34d6c.js"
           crossorigin="anonymous"
         ></script>
-        <title>Portfólio | Repositórios</title>
       </Helmet>
       <div className="container-w2">
         {loading ? <h1>Carregando...</h1> : <h1>Repositórios recentes</h1>}
