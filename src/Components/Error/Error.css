@@ -1,0 +1,19 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.error__message {
+  text-align: center;
+}
+
+.error__message h1 {
+  font-size: 15rem;
+}
+
+.error__message p {
+  font-size: 5rem;
+  font-weight: 300;
+}
