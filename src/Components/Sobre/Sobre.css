@@ -60,7 +60,7 @@
 
   .sobre__text h1 {
     margin-top: 15rem;
-    font-size: 2.8rem;
+    font-size: 5rem;
     font-weight: 300;
   }
 
@@ -78,5 +78,11 @@
   .sobre__img img {
     max-width: 250px;
     margin-top: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .sobre__text h1 {
+    font-size: 2.8rem;
   }
 }
