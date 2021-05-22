@@ -14,6 +14,7 @@ const Contato = () => {
         <meta name="description" content="Página de formulário de contato" />
       </Helmet>
       <div className="container">
+        <h1>Redes sociais</h1>
         <div className="contato__item">
           <a
             href="https://www.facebook.com/filipe.gomes.14019"
@@ -53,6 +54,13 @@ const Contato = () => {
             <span>GitHub</span>
             <p>Visitar</p>
           </a>
+        </div>
+        <div className="on-mobile">
+          <h2>Recado</h2>
+          <p>
+            Sinta-se avontade para entrar em contato por qualquer rede social
+            acima! Se precisar de alguma coisa é só chamar! <span>=)</span>
+          </p>
         </div>
       </div>
     </section>
