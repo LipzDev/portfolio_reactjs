@@ -8,6 +8,7 @@ import Repositorios from './Components/Repositorios/Repositorios';
 import Contato from './Components/Contato/Contato';
 import Particles from './Components/Particles/Particles';
 import Error from './Components/Error/Error';
+import React from 'react';
 
 function App() {
   return (
