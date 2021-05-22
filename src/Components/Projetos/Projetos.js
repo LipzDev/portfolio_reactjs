@@ -28,7 +28,7 @@ const Projetos = () => {
           <h1>Projetos recentes</h1>
           <div className="projetos__content">
             <a
-              href="https://lipzdev.github.io/Copia-Wordpress-Site/"
+              href="https://lipzdev.github.io/Rock-In-Rio"
               className="projetos__overlay"
               target="_blank"
               rel="
@@ -68,7 +68,7 @@ const Projetos = () => {
               <img src={site4} alt="Preview do site 4" />
             </a>
             <a
-              href="https://lipzdev.github.io/AU-Boreal-Site/"
+              href="https://lipzdev.github.io/Dashboard"
               className="projetos__overlay"
               target="_blank"
               rel="
