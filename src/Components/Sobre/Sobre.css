@@ -16,6 +16,7 @@
   font-size: 2rem;
   margin-bottom: 30px;
   max-width: 80%;
+  background: #111118;
 }
 
 .sobre__img {
@@ -41,10 +42,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  body {
-    overflow: initial;
-  }
-
   .sobre {
     height: auto;
   }
