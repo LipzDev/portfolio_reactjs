@@ -42,7 +42,7 @@
   height: 100%;
 
   position: absolute;
-  left: 0;
+  left: -500px;
   top: 0;
 
   transition: 0.3s;
@@ -53,7 +53,7 @@
 }
 
 .projetos__overlay:hover::after {
-  left: -500px;
+  left: 0;
 }
 
 .projetos h1 {
