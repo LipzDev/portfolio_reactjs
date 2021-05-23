@@ -2,7 +2,8 @@
   display: flex;
   align-items: flex-start;
   justify-content: center;
-  height: 100vh;
+  height: auto;
+  padding: 10rem 0 5rem 0;
   flex-direction: column;
 }
 
@@ -59,6 +60,15 @@
   font-size: 4rem;
   font-weight: 200;
   margin-bottom: 15px;
+}
+
+@media screen and (min-width: 1400px) {
+  body {
+    overflow-y: hidden;
+  }
+  .projetos {
+    height: 100vh;
+  }
 }
 
 @media screen and (max-width: 1024px) {

@@ -2,7 +2,7 @@
   padding: 10px 0;
   position: fixed;
   width: 100%;
-  background: transparent;
+  background: #111118;
   z-index: 9999;
 }
 
@@ -60,10 +60,6 @@
 /* ESTILOS DO MENU MOBILE */
 
 @media screen and (max-width: 900px) {
-  .header-movel {
-    background: #111118;
-  }
-
   .menu__desktop {
     display: none;
   }
