@@ -17,9 +17,11 @@ const Sobre = () => {
             <h1>Sobre</h1>
             <p>
               Tenho 22 anos e estou cursando Análise e Desenvolvimento de
-              Sistemas! Moro em Dracena-SP e atualmente um dos meus principais
-              objetivos é entrar no mercado de trabalho na área de TI como
-              programador Front-End Júnior!
+              Sistemas e atualmente meu foco principal é o desenvolvimento web
+              Front-End! Moro no interior de São Paulo em uma cidade chamada
+              Dracena, um dos meus principais objetivos no momento é dominar as
+              tecnologias JavaScript, React JS, Next JS e também começar a
+              estudar sobre UI Design!
             </p>
             <Next route="/projetos" />
           </div>
