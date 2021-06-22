@@ -36,7 +36,6 @@ const Repositorios = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content="Página de repositórios do github." />
-        <meta property="og:image" content="/thumbnail/logo.png"></meta>
         <script
           src="https://kit.fontawesome.com/e6b1f34d6c.js"
           crossorigin="anonymous"
