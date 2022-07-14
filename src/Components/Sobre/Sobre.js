@@ -1,10 +1,14 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import foto1 from '../../Assets/foto.jpg';
+import foto1 from '../../Assets/foto.png';
 import Next from '../Next-page/Next';
 import './Sobre.css';
 
 const Sobre = () => {
+  const birthday = 1998
+  const currentDate = new Date().getUTCFullYear() - birthday;
+
+
   return (
     <section className="sobre  efeito__transicao">
       <Helmet>
@@ -16,12 +20,10 @@ const Sobre = () => {
           <div className="sobre__text">
             <h1>Sobre</h1>
             <p>
-              Tenho 22 anos e estou cursando Análise e Desenvolvimento de
-              Sistemas e atualmente meu foco principal é o desenvolvimento web
-              Front-End! Moro no interior de São Paulo em uma cidade chamada
-              Dracena, um dos meus principais objetivos no momento é dominar as
-              tecnologias JavaScript, React JS, Next JS e também começar a
-              estudar sobre UI Design!
+              Tenho {currentDate} anos, sou formado em Análise e Desenvolvimento de
+              Sistemas, meu foco principal é o desenvolvimento web
+              Front-End, mas tenho interesse em adquirir conhecimentos também na área de Back-End com NodeJS! Sou do interior de São Paulo, sigo estudando em busca dos meus objetivos! <br></br><br></br>
+              Principais tecnologias que trabalho atualmente: Typescript, ReactJS, NextJS, GraphQL, Firebase!
             </p>
             <Next route="/projetos" />
           </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
-import icon1 from './Assets/face.png';
-import icon2 from './Assets/wpp1.png';
-import icon3 from './Assets/lkd.png';
-import icon4 from './Assets/github.png';
+import icon1 from '../../Assets/face.png';
+import icon2 from '../../Assets/wpp1.png';
+import icon3 from '../../Assets/lkd.png';
+import icon4 from '../../Assets/github.png';
 import './Contato.css';
 
 const Contato = () => {
@@ -56,10 +56,11 @@ const Contato = () => {
           </a>
         </div>
         <div className="on-mobile">
-          <h2>Recado</h2>
+          <h2>FIM!</h2>
           <p>
+            Obrigado pela visita =) <br></br><br></br>
             Sinta-se avontade para entrar em contato por qualquer rede social
-            acima! Se precisar de alguma coisa é só chamar! <span>=)</span>
+            acima! Se precisar de alguma coisa é só chamar!
           </p>
         </div>
       </div>

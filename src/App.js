@@ -6,7 +6,6 @@ import Sobre from './Components/Sobre/Sobre';
 import Projetos from './Components/Projetos/Projetos';
 import Repositorios from './Components/Repositorios/Repositorios';
 import Contato from './Components/Contato/Contato';
-import Particles from './Components/Particles/Particles';
 import Error from './Components/Error/Error';
 import React from 'react';
 
@@ -15,7 +14,7 @@ function App() {
     <>
       <BrowserRouter>
         <Header />
-        <Particles />
+        {/* <Particles /> */}
         <Routes>
           <Route path="/" element={<Inicio />} />
           <Route path="sobre" element={<Sobre />} />

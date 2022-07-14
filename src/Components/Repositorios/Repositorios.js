@@ -1,24 +1,22 @@
 import React from 'react';
 import { Helmet } from 'react-helmet';
 import Next from '../Next-page/Next';
+import {getGithubRepository} from '../../Services/request/repo'
 import './Repositorios.css';
 
 const Repositorios = () => {
   const [item, setItem] = React.useState(null);
-  const [topRepositories, setTopRepositories] = React.useState(null);
-  const [loading, setLoading] = React.useState(false);
+  const [topRepositories, setTopRepositories] = React.useState([]);
+  const [loading, setLoading] = React.useState(true);
 
   React.useEffect(() => {
-    async function ApiRequest() {
-      setLoading(true);
-      const response = await fetch(
-        `https://api.github.com/users/LipzDev/repos?per_page=12&page=2`,
-      );
-      const json = await response.json();
+    getGithubRepository().then((repo) => {      
       setLoading(false);
-      setItem(json);
-    }
-    ApiRequest();
+      setItem(repo?.data);
+    }).catch((error) => {
+      setLoading(true);
+      console.error(error);
+    })
   }, []);
 
   React.useEffect(() => {
@@ -36,28 +34,23 @@ const Repositorios = () => {
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content="Página de repositórios do github." />
-        <script
-          src="https://kit.fontawesome.com/e6b1f34d6c.js"
-          crossorigin="anonymous"
-        ></script>
       </Helmet>
-      <div className="container-w2">
-        {loading ? <h1>Carregando...</h1> : <h1>Repositórios recentes</h1>}
+      {loading ? <h1>Carregando...</h1> : (
+        <div className="container-w2">
+        <h1>Repositórios recentes</h1>
         <div className="repositorios__item">
           {topRepositories?.map((repo) => (
             <div className="repositorios__box" key={repo.id}>
               <div className="repo__name">
                 <a href={repo.html_url}>
-                  <i className="fas fa-book"></i>
                   {repo.name}
                 </a>
-                <p>{repo.description}</p>
+                <p>{repo.description ? repo.description : 'Sem descrição...'}</p>
                 <div className="repo__stats">
                   <div className="stats__content">
-                    <p>{repo.language}</p>
+                    <p>Tecnologia: {repo.language}</p>
                     <span>
-                      <i className="far fa-star"></i>
-                      {repo.stargazers_count}
+                      Stars: {repo.stargazers_count}
                     </span>
                   </div>
                   <a href={repo.html_url}>Visitar</a>
@@ -66,10 +59,11 @@ const Repositorios = () => {
             </div>
           ))}
           <div className="next-section-repo">
-            <Next route="/contato" />
+            {!loading && <Next route="/contato" />}            
           </div>
         </div>
       </div>
+      )}
     </section>
   );
 };

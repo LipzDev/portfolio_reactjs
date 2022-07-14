@@ -6,8 +6,8 @@
 }
 
 .sobre__text h1 {
-  font-weight: 600;
-  font-size: 8rem;
+  font-weight: 500;
+  font-size: 7.5rem;
 }
 
 .sobre__text p {
@@ -16,7 +16,6 @@
   font-size: 2rem;
   margin-bottom: 30px;
   max-width: 80%;
-  background: #111118;
 }
 
 .sobre__img {

@@ -10,7 +10,7 @@ const Header = () => {
       <div className="container">
         <div className="header__item">
           <div className="logo">
-            <NavLink to="/">LipzDev</NavLink>
+            <NavLink to="/">Filipe Dev</NavLink>
           </div>
           <nav className="menu__desktop  efeito__header">
             <ul>

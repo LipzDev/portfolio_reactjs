@@ -15,8 +15,8 @@
 }
 
 .inicio__text h1 {
-  font-weight: 600;
-  font-size: 8rem;
+  font-weight: 500;
+  font-size: 7.5rem;
 }
 
 .inicio__text p {
@@ -25,7 +25,6 @@
   font-size: 2rem;
   margin-bottom: 30px;
   max-width: 90%;
-  background: #111118;
 }
 
 @media screen and (max-width: 900px) {
