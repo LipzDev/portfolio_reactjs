@@ -1,75 +1,15 @@
 # 👨‍💻 Portfolio - Filipe Gomes
 
-## 🚀 Sobre Mim
+Portfolio pessoal desenvolvido em React.js com design responsivo e tema dark/light.
 
-Olá! Sou **Filipe Gomes**, um desenvolvedor Front-End apaixonado por criar experiências digitais excepcionais. Atualmente trabalho de forma remota (home office) e estou sempre conectado com as últimas tendências e tecnologias do mercado.
-
-### 🎯 Especialização
-
-- **Front-End**: React, TypeScript, Next.js, TailwindCSS
-- **Back-End (estudando)**: Node.js, NestJS, TypeORM, PostgreSQL
-
-### 🏠 Atuação
-
-Trabalho de forma **remota (home office)**, sempre conectado com as últimas tendências e tecnologias do mercado.
-
-### 🚀 Objetivos
-
-Busco constantemente novos **desafios e oportunidades** para crescer profissionalmente e contribuir com projetos inovadores.
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-### Front-End
-
-- **React 18.2.0** - Biblioteca JavaScript para interfaces
-- **React Router DOM** - Roteamento para aplicações React
-- **React Helmet** - Gerenciamento de meta tags
-- **Axios** - Cliente HTTP para requisições
-- **CSS3** - Estilização moderna e responsiva
-
-### Desenvolvimento
-
-- **Node.js** - Runtime JavaScript
-- **Git** - Controle de versão
-- **GitHub** - Plataforma de hospedagem
-
----
-
-## 📱 Funcionalidades
-
-### ✨ Interface Moderna
-
-- Design responsivo e adaptável a todos os dispositivos
-- Animações suaves e transições elegantes
-- Tema escuro com gradientes modernos
-- Navegação intuitiva e acessível
-
-### 🎨 Seções Principais
-
-- **Início**: Apresentação pessoal e profissional
-- **Sobre**: Informações detalhadas sobre experiência e objetivos
-- **Repositórios**: Projetos do GitHub com informações em tempo real
-- **Contato**: Formulário de contato e links sociais
-
-### 🔧 Recursos Técnicos
-
-- **SEO Otimizado**: Meta tags e descrições para melhor indexação
-- **Performance**: Carregamento rápido e otimizado
-- **Responsividade**: Funciona perfeitamente em desktop, tablet e mobile
-- **Acessibilidade**: Navegação por teclado e leitores de tela
-
----
-
-## 🚀 Como Executar o Projeto
+## 🚀 Como Executar Localmente
 
 ### Pré-requisitos
 
-- Node.js (versão 14 ou superior)
+- Node.js (versão 16 ou superior)
 - npm ou yarn
 
-### Instalação
+### Instalação e Execução
 
 1. **Clone o repositório**
 
@@ -82,16 +22,12 @@ Busco constantemente novos **desafios e oportunidades** para crescer profissiona
 
    ```bash
    npm install
-   # ou
-   yarn install
    ```
 
 3. **Execute o projeto**
 
    ```bash
    npm start
-   # ou
-   yarn start
    ```
 
 4. **Acesse no navegador**
@@ -99,59 +35,41 @@ Busco constantemente novos **desafios e oportunidades** para crescer profissiona
    http://localhost:3000
    ```
 
-### Scripts Disponíveis
+## 🚀 Deploy na Vercel
 
-- `npm start` - Inicia o servidor de desenvolvimento
-- `npm run build` - Cria a versão de produção
-- `npm test` - Executa os testes
-- `npm run eject` - Ejecta a configuração do Create React App
+### Opção 1: Deploy Automático (Recomendado)
 
----
+1. Conecte seu repositório GitHub à Vercel
+2. A Vercel detectará automaticamente que é um projeto React
+3. O deploy será feito automaticamente em: `https://lipzdev.vercel.app`
 
-## 🌟 Destaques do Projeto
+### Opção 2: Deploy Manual
 
-### 🎨 Design System
+1. Instale o Vercel CLI: `npm install -g vercel`
+2. Faça login: `vercel login`
+3. Deploy: `vercel --prod`
 
-- Paleta de cores consistente com tema escuro
-- Tipografia moderna e legível
-- Componentes reutilizáveis e modulares
-- Animações suaves e profissionais
+## 🛠️ Tecnologias
 
-### 📱 Responsividade
+- **React 18.2.0** - Biblioteca JavaScript
+- **React Router DOM** - Roteamento
+- **React Helmet** - Meta tags
+- **Axios** - Requisições HTTP
+- **CSS3** - Estilização responsiva
 
-- **Desktop**: Layout otimizado para telas grandes
-- **Tablet**: Adaptação para telas médias
-- **Mobile**: Interface compacta e funcional
-- **4K**: Suporte para resoluções ultra-altas
+## 📱 Funcionalidades
 
-### ⚡ Performance
-
-- Carregamento otimizado de imagens
-- Lazy loading para componentes
-- Código limpo e eficiente
+- Design responsivo para todos os dispositivos
+- Tema dark/light com alternância
+- Seções: Início, Sobre, Repositórios, Contato
+- Integração com API do GitHub
 - SEO otimizado
-
----
 
 ## 📞 Contato
 
-<div align="center">
-  <a href="https://github.com/LipzDev" target="_blank">
-    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
-  </a>
-  <a href="https://linkedin.com/in/lipzdev" target="_blank">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="mailto:contato.devweb@hotmail.com.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-</div>
-
----
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+- **GitHub**: [@LipzDev](https://github.com/LipzDev)
+- **LinkedIn**: [lipzdev](https://linkedin.com/in/lipzdev)
+- **Email**: contato.devweb@hotmail.com
 
 ---
 

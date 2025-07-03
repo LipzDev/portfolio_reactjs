@@ -254,7 +254,7 @@
 }
 
 .sobre__image:hover .image__container img {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 
 .image__overlay {
