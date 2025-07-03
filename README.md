@@ -20,14 +20,58 @@ Portfolio pessoal desenvolvido em React.js com design responsivo e tema dark/lig
 
 2. **Instale as dependências**
 
+   **Usando npm:**
+
    ```bash
    npm install
    ```
 
+   **Usando yarn:**
+
+   ```bash
+   yarn install
+   ```
+
 3. **Execute o projeto**
+
+   **Usando npm:**
 
    ```bash
    npm start
+   ```
+
+   **Usando yarn:**
+
+   ```bash
+   yarn start
+   ```
+
+   **⚠️ Problema com Node.js 17+?**
+
+   Se você estiver usando Node.js versão 17 ou superior e encontrar o erro `error:0308010C:digital envelope routines::unsupported`, use um destes comandos:
+
+   **Para Windows (Git Bash):**
+
+   ```bash
+   export NODE_OPTIONS=--openssl-legacy-provider && npm start
+   # ou
+   export NODE_OPTIONS=--openssl-legacy-provider && yarn start
+   ```
+
+   **Para Windows (CMD/PowerShell):**
+
+   ```bash
+   set NODE_OPTIONS=--openssl-legacy-provider && npm start
+   # ou
+   set NODE_OPTIONS=--openssl-legacy-provider && yarn start
+   ```
+
+   **Para Linux/Mac:**
+
+   ```bash
+   export NODE_OPTIONS=--openssl-legacy-provider && npm start
+   # ou
+   export NODE_OPTIONS=--openssl-legacy-provider && yarn start
    ```
 
 4. **Acesse no navegador**
@@ -41,7 +85,7 @@ Portfolio pessoal desenvolvido em React.js com design responsivo e tema dark/lig
 
 1. Conecte seu repositório GitHub à Vercel
 2. A Vercel detectará automaticamente que é um projeto React
-3. O deploy será feito automaticamente em: `https://lipzdev.vercel.app`
+3. O deploy será feito automaticamente em: `https://filipedev-portfolio.vercel.app`
 
 ### Opção 2: Deploy Manual
 

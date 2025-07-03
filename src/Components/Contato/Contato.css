@@ -66,30 +66,62 @@
   line-height: 1.6;
 }
 
+/* Light Mode Styles */
+.light-mode .contato__description {
+  color: #333333;
+}
+
+.light-mode .contato h1 {
+  color: #333333;
+}
+
+.light-mode .on-mobile {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.light-mode .on-mobile h2 {
+  color: #333333;
+}
+
+.light-mode .on-mobile p {
+  color: rgba(51, 51, 51, 0.8);
+}
+
 @media screen and (max-width: 900px) {
+  .container p {
+    text-align: left;
+  }
+
   .contato {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     display: flex;
     align-items: center;
+    padding: 12rem 0 5rem 0;
+    overflow-y: auto;
   }
 
   .contato__item {
     position: relative;
     height: auto;
+    width: 90%;
+    margin: 0 auto;
   }
 
   .contato__item a {
-    padding: 10px;
+    padding: 15px;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     width: 100%;
     font-weight: 300;
   }
 
   .contato__item img {
-    max-width: 40px;
+    max-width: 50px;
   }
 
   .contato__item a + a {
@@ -98,43 +130,87 @@
 
   .contato h1 {
     display: block;
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 300;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 
   .contato__item a:hover > p {
-    transform: translateY(-23px);
+    transform: translateY(-25px);
   }
 
   .on-mobile {
     display: block;
     background: #2e3138;
-    border-radius: 4px;
+    border-radius: 8px;
     width: 100%;
     height: auto;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 15px;
+    margin-top: 25px;
   }
 
   .on-mobile h2 {
-    margin-bottom: 10px;
-    font-size: 2.2rem;
+    margin-bottom: 12px;
+    font-size: 2.5rem;
     font-weight: 200;
   }
 
   .on-mobile p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 200;
   }
 
   .on-mobile span {
     margin-left: 5px;
   }
+
+  .contato__description {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 500px) {
+  .contato {
+    height: auto;
+    min-height: 100vh;
+    padding: 10rem 0 5rem 0;
+    overflow-y: auto;
+  }
+
+  .contato__item {
+    width: 90%;
+    margin: 0 auto;
+  }
+
   .contato h1 {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
+  }
+
+  .contato__item a {
+    padding: 12px;
+    font-size: 1.3rem;
+  }
+
+  .contato__item img {
+    max-width: 45px;
+  }
+
+  .on-mobile {
+    padding: 12px;
+    margin-top: 20px;
+  }
+
+  .on-mobile h2 {
+    font-size: 2.2rem;
+  }
+
+  .on-mobile p {
+    font-size: 1.5rem;
+  }
+
+  .contato__description {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
   }
 }

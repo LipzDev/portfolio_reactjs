@@ -157,12 +157,82 @@
   background: rgba(0, 174, 255, 0.1);
 }
 
+/* Theme Toggle Mobile */
+.theme-toggle-mobile {
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: white;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+}
+
+.theme-toggle-mobile:hover {
+  background: rgba(0, 174, 255, 0.1);
+  transform: scale(1.02);
+}
+
+.light-mode .theme-toggle-mobile {
+  color: #333333;
+}
+
+.light-mode .theme-toggle-mobile:hover {
+  background: rgba(0, 174, 255, 0.1);
+}
+
+/* Theme Toggle Mobile Top Left */
+.theme-toggle-mobile-top {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  color: white;
+  z-index: 10000;
+}
+
+.theme-toggle-mobile-top:hover {
+  background: rgba(0, 174, 255, 0.1);
+  transform: scale(1.1);
+}
+
+.light-mode .theme-toggle-mobile-top {
+  color: #333333;
+}
+
+.light-mode .theme-toggle-mobile-top:hover {
+  background: rgba(0, 174, 255, 0.1);
+}
+
 @media screen and (min-width: 900px) {
   .menu__mobile {
     display: none;
   }
 
   .hamburger {
+    display: none;
+  }
+
+  .theme-toggle-mobile,
+  .theme-toggle-mobile-top {
     display: none;
   }
 }
@@ -174,21 +244,25 @@
     display: none;
   }
 
+  .theme-toggle-desktop {
+    display: none;
+  }
+
   .logo-icon {
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
   }
 
   .code-icon {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
   }
 
   .logo-name {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
 
   .logo-title {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
 
   .menu__mobile {
@@ -216,11 +290,11 @@
   }
 
   .menu__mobile li + li {
-    margin-top: 20px;
+    margin-top: 25px;
   }
 
   .menu__mobile a {
-    font-size: 2rem;
+    font-size: 2.2rem;
     color: white;
     transition: color 0.3s ease;
   }
@@ -232,6 +306,11 @@
   .light-mode .menu__mobile a {
     color: #333333;
   }
+
+  .theme-toggle {
+    font-size: 1.8rem;
+    margin: 0 18px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -240,24 +319,44 @@
   }
 
   .logo-icon {
-    width: 35px;
-    height: 35px;
+    width: 38px;
+    height: 38px;
   }
 
   .code-icon {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
   }
 
   .logo-name {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .logo-title {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .theme-toggle {
+    font-size: 1.7rem;
+    margin: 0 12px;
+  }
+
+  .menu__mobile a {
+    font-size: 2rem;
+  }
+
+  .menu__mobile li + li {
+    margin-top: 20px;
+  }
+
+  .theme-toggle-mobile {
     font-size: 1.6rem;
-    margin: 0 15px;
+    padding: 10px 16px;
+  }
+
+  .theme-toggle-mobile-top {
+    top: 15px;
+    left: 15px;
+    font-size: 1.8rem;
+    padding: 10px;
   }
 }

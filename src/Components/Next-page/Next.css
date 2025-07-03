@@ -20,6 +20,12 @@
 
 @media screen and (max-width: 900px) {
   .next-section {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .next-section {
     font-size: 1.5rem;
   }
 }

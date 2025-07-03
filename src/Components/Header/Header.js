@@ -44,9 +44,9 @@ const Header = () => {
             </ul>
           </nav>
 
-          {/* Theme Toggle Button */}
+          {/* Theme Toggle Button - Desktop Only */}
           <button
-            className="theme-toggle"
+            className="theme-toggle theme-toggle-desktop"
             onClick={toggleTheme}
             aria-label={isDarkMode ? "Ativar modo claro" : "Ativar modo escuro"}
           >
@@ -54,10 +54,20 @@ const Header = () => {
           </button>
 
           {/* ICON */}
-
           <Hamburguer />
 
           <nav className="menu__mobile">
+            {/* Theme Toggle Button - Mobile Top Left */}
+            <button
+              className="theme-toggle theme-toggle-mobile-top"
+              onClick={toggleTheme}
+              aria-label={
+                isDarkMode ? "Ativar modo claro" : "Ativar modo escuro"
+              }
+            >
+              {isDarkMode ? "☀️" : "🌙"}
+            </button>
+
             <ul>
               <li>
                 <NavLink to="/" end onClick={CloseMenu}>

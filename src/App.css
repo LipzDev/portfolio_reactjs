@@ -61,6 +61,26 @@ span {
   width: 95%;
 }
 
+@media screen and (max-width: 900px) {
+  .container {
+    width: 90%;
+  }
+
+  .container-w2 {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .container {
+    width: 90%;
+  }
+
+  .container-w2 {
+    width: 90%;
+  }
+}
+
 .efeito__transicao {
   opacity: 0;
   transform: translateX(-200px);

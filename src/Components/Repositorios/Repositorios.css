@@ -408,84 +408,111 @@
 
 @media screen and (max-width: 900px) {
   .repositorios {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     padding: 12rem 0 5rem 0;
+    overflow-y: auto;
+  }
+
+  .container-w2 {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .repositorios__item {
     grid-template-columns: 1fr;
-    gap: 12px;
-    max-height: calc(100vh - 22rem);
+    gap: 15px;
+    max-height: none;
   }
 
   .repositorios h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 300;
   }
 
+  .repositorios__description {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+  }
+
   .repositorios__box {
-    padding: 12px;
+    padding: 16px;
+    min-height: 140px;
   }
 
   .repo__name a {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 
   .repo__name p {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
   }
 
   .stats__content {
-    gap: 8px;
+    gap: 10px;
   }
 
   .stats__content p,
   .stats__content span {
-    font-size: 1rem;
-    padding: 2px 6px;
+    font-size: 1.2rem;
+    padding: 4px 8px;
   }
 
   .repo__stats a {
-    font-size: 1rem;
-    padding: 5px 10px;
+    font-size: 1.2rem;
+    padding: 6px 12px;
   }
 }
 
 @media screen and (max-width: 500px) {
   .repositorios {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     padding: 10rem 0 5rem 0;
+    overflow-y: auto;
+  }
+
+  .container-w2 {
+    width: 90%;
+    margin: 0 auto;
   }
 
   .repositorios__item {
-    max-height: calc(100vh - 20rem);
+    max-height: none;
   }
 
   .repositorios h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 
   .repositorios__description {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-bottom: 20px;
   }
 
   .repositorios__box {
-    padding: 10px;
+    padding: 14px;
+    min-height: 150px;
   }
 
   .repo__name a {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 
   .repo__name p {
-    font-size: 1rem;
+    font-size: 1.2rem;
   }
 
   .stats__content {
     flex-direction: column;
     align-items: flex-start;
-    gap: 6px;
+    gap: 8px;
+  }
+
+  .stats__content p,
+  .stats__content span {
+    font-size: 1.1rem;
+    padding: 3px 7px;
   }
 
   .repo__stats {
@@ -495,5 +522,7 @@
 
   .repo__stats a {
     text-align: center;
+    font-size: 1.1rem;
+    padding: 5px 10px;
   }
 }
