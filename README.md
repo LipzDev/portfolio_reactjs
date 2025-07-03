@@ -1,16 +1,5 @@
 # 👨‍💻 Portfolio - Filipe Gomes
 
-<div align="center">
-  <img src="preview.png" alt="Portfolio Preview" width="800"/>
-  
-  [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-  [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs)](https://nodejs.org/)
-  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github)](https://github.com/LipzDev)
-</div>
-
----
-
 ## 🚀 Sobre Mim
 
 Olá! Sou **Filipe Gomes**, um desenvolvedor Front-End apaixonado por criar experiências digitais excepcionais. Atualmente trabalho de forma remota (home office) e estou sempre conectado com as últimas tendências e tecnologias do mercado.
