@@ -53,10 +53,23 @@
   min-height: 120px;
 }
 
+/* Light Mode Repository Cards */
+.light-mode .repositorios__box {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .repositorios__box:hover {
   /* transform: translateY(-5px); */
   border-color: rgba(0, 174, 255, 0.3);
   background: rgba(255, 255, 255, 0.08);
+}
+
+.light-mode .repositorios__box:hover {
+  border-color: rgba(0, 174, 255, 0.4);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .repositorios__box::before {
@@ -105,6 +118,10 @@
   -webkit-box-orient: vertical;
 }
 
+.light-mode .repo__name p {
+  color: rgba(51, 51, 51, 0.8);
+}
+
 .repo__stats {
   display: flex;
   align-items: center;
@@ -144,6 +161,12 @@
   backdrop-filter: blur(10px);
 }
 
+.light-mode .stats__content p,
+.light-mode .stats__content span {
+  color: rgba(51, 51, 51, 0.7);
+  background: rgba(0, 0, 0, 0.05);
+}
+
 .repo__stats a {
   background: linear-gradient(135deg, #00aeff, #0066cc);
   color: white;
@@ -163,10 +186,29 @@
   transform: translateY(-2px);
 }
 
+/* Light Mode Button */
+.light-mode .repo__stats a {
+  background: #00aeff;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 174, 255, 0.3);
+}
+
+.light-mode .repo__stats a:hover {
+  background: transparent;
+  border-color: #00aeff;
+  color: #00aeff;
+  box-shadow: 0 4px 12px rgba(0, 174, 255, 0.2);
+}
+
 .repositorios h1 {
   font-size: 4rem;
   font-weight: 200;
   margin-bottom: 15px;
+  color: white;
+}
+
+.light-mode .repositorios h1 {
+  color: #333333;
 }
 
 .repositorios__description {
@@ -179,6 +221,10 @@
   margin-left: 0;
   margin-right: auto;
   line-height: 1.5;
+}
+
+.light-mode .repositorios__description {
+  color: #333333;
 }
 
 /* Loading state */

@@ -10,8 +10,18 @@
 @import url(https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap);
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   background: #111118;
+  transition: background 0.3s ease;
+}
+
+/* Light Mode Global Styles */
+.light-mode {
+  background: #f8fafc;
+}
+
+.light-mode body {
+  background: #f8fafc;
 }
 
 html {
@@ -26,6 +36,17 @@ a,
 p,
 span {
   color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+/* Light Mode Text Colors */
+.light-mode h1,
+.light-mode h2,
+.light-mode h3,
+.light-mode h4,
+.light-mode p,
+.light-mode span {
+  color: #333333;
 }
 
 .container {

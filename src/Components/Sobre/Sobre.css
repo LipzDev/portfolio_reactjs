@@ -23,6 +23,14 @@
   letter-spacing: -1px;
 }
 
+/* Light Mode Title */
+.light-mode .sobre__header h1 {
+  background: linear-gradient(135deg, #333333, #00aeff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
 .sobre__subtitle {
   font-size: 1.8rem;
   font-weight: 300;
@@ -30,6 +38,10 @@
   max-width: 600px;
   margin: 0;
   line-height: 1.5;
+}
+
+.light-mode .sobre__subtitle {
+  color: rgba(51, 51, 51, 0.8);
 }
 
 .sobre__content {
@@ -108,9 +120,22 @@
   gap: 1rem;
 }
 
+/* Light Mode Cards */
+.light-mode .info-card {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
 .info-card:hover {
   border-color: rgba(0, 174, 255, 0.3);
   background: rgba(255, 255, 255, 0.08);
+}
+
+.light-mode .info-card:hover {
+  border-color: rgba(0, 174, 255, 0.4);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .card__icon {
@@ -139,6 +164,10 @@
   padding-left: 10px;
 }
 
+.light-mode .card__content h3 {
+  color: #00aeff;
+}
+
 .card__content p {
   font-size: 1.3rem;
   font-weight: 300;
@@ -146,6 +175,10 @@
   color: rgba(255, 255, 255, 0.8);
   margin: 0 0 0.4rem 0;
   padding-left: 10px;
+}
+
+.light-mode .card__content p {
+  color: rgba(51, 51, 51, 0.8);
 }
 
 .card__content p:last-child {
@@ -180,6 +213,10 @@
   color: rgba(255, 255, 255, 0.9);
   margin: 0;
   padding-left: 10px;
+}
+
+.light-mode .item__text {
+  color: rgba(51, 51, 51, 0.9);
 }
 
 .sobre__next {

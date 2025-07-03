@@ -2,9 +2,12 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import Hamburguer from "./Hamburguer/Hamburguer";
 import { OpenMenu as CloseMenu } from "./Hamburguer/Hamburguer";
+import { useTheme } from "../../Context/ThemeContext";
 import "./Header.css";
 
 const Header = () => {
+  const { isDarkMode, toggleTheme } = useTheme();
+
   return (
     <header className="header">
       <div className="container">
@@ -40,6 +43,15 @@ const Header = () => {
               </li>
             </ul>
           </nav>
+
+          {/* Theme Toggle Button */}
+          <button
+            className="theme-toggle"
+            onClick={toggleTheme}
+            aria-label={isDarkMode ? "Ativar modo claro" : "Ativar modo escuro"}
+          >
+            {isDarkMode ? "☀️" : "🌙"}
+          </button>
 
           {/* ICON */}
 

@@ -2,9 +2,19 @@
   font-size: 2rem;
   font-weight: 300;
   transition: 0.3s;
+  color: white;
 }
 
 .next-section:hover {
+  color: #00aeff;
+}
+
+/* Light Mode */
+.light-mode .next-section {
+  color: #333333;
+}
+
+.light-mode .next-section:hover {
   color: #00aeff;
 }
 
