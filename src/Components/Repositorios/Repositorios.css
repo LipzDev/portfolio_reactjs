@@ -6,174 +6,448 @@
 
 .repositorios {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   height: 100vh;
   padding: 10rem 0 5rem 0;
+  flex-direction: column;
+  overflow: hidden;
 }
 
 .repositorios__item {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 15px;
+  width: 100%;
+  max-height: calc(100vh - 25rem);
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 174, 255, 0.3) transparent;
+}
+
+.repositorios__item::-webkit-scrollbar {
+  width: 6px;
+}
+
+.repositorios__item::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.repositorios__item::-webkit-scrollbar-thumb {
+  background: rgba(0, 174, 255, 0.3);
+  border-radius: 3px;
+}
+
+.repositorios__item::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 174, 255, 0.5);
 }
 
 .repositorios__box {
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 10px;
-  height: 120px;
-  /* padding: 10px; */
-  background: #111118;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 15px;
+  transition: all 0.3s ease;
   position: relative;
+  overflow: hidden;
+  min-height: 120px;
 }
 
-.next-section-repo {
-  margin-top: 10px;
+.repositorios__box:hover {
+  /* transform: translateY(-5px); */
+  border-color: rgba(0, 174, 255, 0.3);
+  background: rgba(255, 255, 255, 0.08);
 }
 
-.repo__desc img {
-  width: 90px;
-  border-radius: 50%;
+.repositorios__box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #00aeff, #0066cc);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
 }
 
-/* ESTILOS DO BOX */
+.repositorios__box:hover::before {
+  transform: scaleX(1);
+}
+
+.repo__name {
+  margin-bottom: 20px;
+}
+
+.repo__name a {
+  color: #00aeff;
+  font-weight: 600;
+  font-size: 1.4rem;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: inline-block;
+  margin-bottom: 6px;
+}
+
+.repo__name a:hover {
+  color: #ffffff;
+}
+
+.repo__name p {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.4;
+  margin: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+}
 
 .repo__stats {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  position: absolute;
-  bottom: 10px;
-  width: 95%;
-}
-
-.repo__name {
-  padding: 10px;
-}
-
-.repo__name a {
-  display: flex;
-  align-items: center;
-  color: #58a6f0;
-  font-weight: 600;
-  font-size: 1.5rem;
-  margin-bottom: 5px;
-}
-
-.repo__name a i {
-  color: #ccc;
-}
-
-.repo__name p {
-  font-size: 1.2rem;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2; /* number of lines to show */
-  line-clamp: 1;
-  -webkit-box-orient: vertical;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
 }
 
 .stats__content {
   display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
 }
 
 .stats__content p {
-  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 0;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
 }
 
 .stats__content span {
   display: flex;
   align-items: center;
-  font-size: 1.2rem;
-  /* font-weight: 200; */
-}
-
-.stats__content span i {
-  font-size: 1.6rem;
-  margin-right: 10px;
-  position: relative;
-  top: -2px;
+  font-size: 1.1rem;
+  color: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 3px 8px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
 }
 
 .repo__stats a {
-  font-size: 1.2rem;
-  color: #f8f8f8;
-  margin: 0;
+  background: linear-gradient(135deg, #00aeff, #0066cc);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.repo__stats a:hover {
+  background: transparent;
+  border-color: #00aeff;
+  color: #00aeff;
+  transform: translateY(-2px);
 }
 
 .repositorios h1 {
   font-size: 4rem;
   font-weight: 200;
-  padding-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-/* SCROLL */
-
-::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
-  background-color: #f5f5f5;
+.repositorios__description {
+  text-align: left;
+  font-size: 1.6rem;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 25px;
+  max-width: 800px;
+  margin-left: 0;
+  margin-right: auto;
+  line-height: 1.5;
 }
 
-::-webkit-scrollbar {
-  width: 6px;
-  background-color: #f5f5f5;
-}
-::-webkit-scrollbar-thumb {
-  background-color: #212121;
+/* Loading state */
+.repositorios .loading {
+  text-align: center;
+  font-size: 2rem;
+  color: #00aeff;
+  margin: 50px 0;
 }
 
-@media screen and (min-width: 1400px) {
+/* Empty state */
+.repositorios .empty-state {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.repositorios .empty-state h2 {
+  font-size: 2.5rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 15px;
+}
+
+.repositorios .empty-state p {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.next-section-repo {
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+/* Resoluções 4K e muito grandes */
+@media screen and (min-width: 2560px) {
   .repositorios {
     height: 100vh;
   }
+
+  .repositorios__item {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+
+  .repositorios h1 {
+    font-size: 5rem;
+  }
+
+  .repositorios__description {
+    font-size: 1.8rem;
+  }
 }
 
-@media screen and (max-width: 1024px) and (max-height: 1366px) {
+/* Resoluções grandes (1600x900 e acima) */
+@media screen and (min-width: 1600px) and (max-width: 2559px) {
+  .repositorios {
+    height: 100vh;
+  }
+
   .repositorios__item {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+  }
+}
+
+/* Resoluções médias (1280x720 - 1599px) */
+@media screen and (min-width: 1280px) and (max-width: 1599px) {
+  .repositorios {
+    height: 100vh;
+    padding: 10rem 0 5rem 0;
+  }
+
+  .repositorios__item {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-height: calc(100vh - 25rem);
+  }
+
+  .repositorios h1 {
+    font-size: 3.8rem;
+  }
+
+  .repositorios__description {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
   }
 
   .repositorios__box {
-    width: 100%;
+    padding: 14px;
+    min-height: 140px;
+  }
+
+  .repo__name a {
+    font-size: 1.3rem;
+  }
+
+  .repo__name p {
+    font-size: 1.1rem;
+    -webkit-line-clamp: 3;
+  }
+
+  .stats__content {
+    gap: 8px;
+  }
+
+  .stats__content p,
+  .stats__content span {
+    font-size: 1rem;
+    padding: 3px 7px;
+  }
+
+  .repo__stats a {
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+}
+
+/* Otimização específica para 1280x720 */
+@media screen and (width: 1280px) and (height: 720px) {
+  .repositorios {
+    padding: 8rem 0 4rem 0;
+  }
+
+  .repositorios__item {
+    max-height: calc(100vh - 20rem);
+    gap: 12px;
+  }
+
+  .repositorios h1 {
+    font-size: 3.5rem;
+    margin-bottom: 12px;
+  }
+
+  .repositorios__description {
+    font-size: 1.4rem;
+    margin-bottom: 18px;
+  }
+
+  .repositorios__box {
+    padding: 12px;
+    min-height: 130px;
+  }
+}
+
+/* Resoluções pequenas (1024px - 1279px) */
+@media screen and (min-width: 1024px) and (max-width: 1279px) {
+  .repositorios {
+    height: 100vh;
+    padding: 10rem 0 5rem 0;
+  }
+
+  .repositorios__item {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-height: calc(100vh - 25rem);
+  }
+
+  .repositorios h1 {
+    font-size: 3.5rem;
+  }
+
+  .repositorios__description {
+    font-size: 1.4rem;
+  }
+}
+
+/* Resoluções tablet (900px - 1023px) */
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+  .repositorios {
+    height: 100vh;
+    padding: 12rem 0 5rem 0;
+  }
+
+  .repositorios__item {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    max-height: calc(100vh - 22rem);
   }
 }
 
 @media screen and (max-width: 900px) {
   .repositorios {
-    height: auto;
-    padding: 10rem 0 5rem 0;
+    height: 100vh;
+    padding: 12rem 0 5rem 0;
   }
 
   .repositorios__item {
     grid-template-columns: 1fr;
+    gap: 12px;
+    max-height: calc(100vh - 22rem);
   }
 
   .repositorios h1 {
-    font-size: 4rem;
+    font-size: 3.5rem;
     font-weight: 300;
   }
 
   .repositorios__box {
-    width: 100%;
+    padding: 12px;
+  }
+
+  .repo__name a {
+    font-size: 1.3rem;
+  }
+
+  .repo__name p {
+    font-size: 1.1rem;
+  }
+
+  .stats__content {
+    gap: 8px;
+  }
+
+  .stats__content p,
+  .stats__content span {
+    font-size: 1rem;
+    padding: 2px 6px;
+  }
+
+  .repo__stats a {
+    font-size: 1rem;
+    padding: 5px 10px;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .repositorios h1 {
-    font-size: 2.8rem;
+  .repositorios {
+    height: 100vh;
+    padding: 10rem 0 5rem 0;
   }
-}
 
-.repositorios__description {
-  text-align: center;
-  font-size: 1.8rem;
-  font-weight: 300;
-  color: #ffffff;
-  margin-bottom: 40px;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.6;
+  .repositorios__item {
+    max-height: calc(100vh - 20rem);
+  }
+
+  .repositorios h1 {
+    font-size: 2.5rem;
+  }
+
+  .repositorios__description {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .repositorios__box {
+    padding: 10px;
+  }
+
+  .repo__name a {
+    font-size: 1.2rem;
+  }
+
+  .repo__name p {
+    font-size: 1rem;
+  }
+
+  .stats__content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+
+  .repo__stats {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .repo__stats a {
+    text-align: center;
+  }
 }

@@ -9,39 +9,87 @@ const Sobre = () => {
   const currentDate = new Date().getUTCFullYear() - birthday;
 
   return (
-    <section className="sobre  efeito__transicao">
+    <section className="sobre efeito__transicao">
       <Helmet>
         <meta charSet="utf-8" />
-        <meta name="description" content="Página sobre" />
+        <meta
+          name="description"
+          content="Sobre Filipe Gomes - Desenvolvedor Front-End"
+        />
       </Helmet>
       <div className="container-w2">
-        <div className="sobre__item">
-          <div className="sobre__text">
-            <h1>Sobre Mim</h1>
-            <p>
-              Tenho {currentDate} anos e sou formado em Análise e
-              Desenvolvimento de Sistemas. Sou apaixonado por criar experiências
-              digitais excepcionais e transformar designs em código funcional e
-              elegante.
-              <br />
-              <br />
-              <strong>Especialização:</strong> Desenvolvimento Front-End com
-              foco em React, TypeScript, Next.js e TailwindCSS. Atualmente estou
-              expandindo meus conhecimentos para o ecossistema Back-End,
-              estudando Node.js, NestJS, TypeORM e PostgreSQL.
-              <br />
-              <br />
-              <strong>Atuação:</strong> Trabalho de forma remota (home office),
-              sempre conectado com as últimas tendências e tecnologias do
-              mercado. Estou em busca constante de novos desafios e
-              oportunidades para crescer profissionalmente e contribuir com
-              projetos inovadores.
-            </p>
-            <Next route="/repositorios" />
+        <div className="sobre__header">
+          <h1>Sobre Mim</h1>
+          <p className="sobre__subtitle">
+            Desenvolvedor apaixonado por criar experiências digitais
+            excepcionais
+          </p>
+        </div>
+
+        <div className="sobre__content">
+          <div className="sobre__left">
+            <div className="sobre__cards">
+              <div className="info-card">
+                <div className="card__icon">💻</div>
+                <div className="card__content">
+                  <h3>Especialização</h3>
+                  <div className="specialization__content">
+                    <div className="specialization__item">
+                      <div className="item__text">
+                        <strong>Front-End:</strong> React, TypeScript, Next.js,
+                        TailwindCSS
+                      </div>
+                    </div>
+                    <div className="specialization__item">
+                      <div className="item__text">
+                        <strong>Back-End (estudando):</strong> Node.js, NestJS,
+                        TypeORM, PostgreSQL
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="info-card">
+                <div className="card__icon">🏠</div>
+                <div className="card__content">
+                  <h3>Atuação</h3>
+                  <p>
+                    Trabalho de forma <strong>remota (home office)</strong>,
+                    sempre conectado com as últimas tendências e tecnologias do
+                    mercado.
+                  </p>
+                </div>
+              </div>
+
+              <div className="info-card">
+                <div className="card__icon">🚀</div>
+                <div className="card__content">
+                  <h3>Objetivos</h3>
+                  <p>
+                    Busco constantemente novos{" "}
+                    <strong>desafios e oportunidades</strong> para crescer
+                    profissionalmente e contribuir com projetos inovadores.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="sobre__next">
+              <Next route="/repositorios" />
+            </div>
           </div>
 
-          <div className="sobre__img">
-            <img src={foto1} alt="Foto do criador do site!" />
+          <div className="sobre__right">
+            <div className="sobre__image">
+              <div className="image__container">
+                <img src={foto1} alt="Filipe Gomes - Desenvolvedor Front-End" />
+                <div className="image__overlay"></div>
+              </div>
+              <div className="image__badge">
+                <span>Front-End Developer</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>

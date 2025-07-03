@@ -20,17 +20,6 @@ const Contato = () => {
           contato através das minhas redes sociais ou envie uma mensagem direta.
         </p>
         <div className="contato__item">
-          <a
-            href="https://www.facebook.com/filipe.gomes.14019"
-            target="_blank"
-            rel="
-              noopener
-              noreferrer"
-          >
-            <img src={icon1} alt="Icone do Facebook" />
-            <span>Facebook</span>
-            <p>Visitar</p>
-          </a>
           <a href="https://api.whatsapp.com/send/?phone=5518996855200&text=Olá Filipe Gomes... &app_absent=0">
             <img src={icon2} alt="Icone do Whatsapp" />
             <span>Whatsapp</span>
