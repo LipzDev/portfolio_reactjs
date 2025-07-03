@@ -61,8 +61,6 @@ span {
   width: 95%;
 }
 
-/* EFEITO TRANSIÇÃO DAS PAGINAS */
-
 .efeito__transicao {
   opacity: 0;
   transform: translateX(-200px);
