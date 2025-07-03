@@ -1,16 +1,5 @@
 # 👨‍💻 Portfolio - Filipe Gomes
 
-<div align="center">
-  <img src="preview.png" alt="Portfolio Preview" width="800"/>
-  
-  [![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react)](https://reactjs.org/)
-  [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript)](https://www.typescriptlang.org/)
-  [![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs)](https://nodejs.org/)
-  [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github)](https://github.com/LipzDev)
-</div>
-
----
-
 ## 🚀 Sobre Mim
 
 Olá! Sou **Filipe Gomes**, um desenvolvedor Front-End apaixonado por criar experiências digitais excepcionais. Atualmente trabalho de forma remota (home office) e estou sempre conectado com as últimas tendências e tecnologias do mercado.
@@ -119,31 +108,6 @@ Busco constantemente novos **desafios e oportunidades** para crescer profissiona
 
 ---
 
-## 📁 Estrutura do Projeto
-
-```
-portfolio_reactjs/
-├── public/                 # Arquivos públicos
-│   ├── index.html         # HTML principal
-│   └── favicon.ico        # Ícone do site
-├── src/                   # Código fonte
-│   ├── Components/        # Componentes React
-│   │   ├── Contato/       # Seção de contato
-│   │   ├── Header/        # Cabeçalho e navegação
-│   │   ├── Inicio/        # Página inicial
-│   │   ├── Next-page/     # Componente de navegação
-│   │   ├── Repositorios/  # Seção de projetos
-│   │   └── Sobre/         # Seção sobre mim
-│   ├── Assets/           # Imagens e recursos
-│   ├── Services/         # Serviços e APIs
-│   ├── App.js           # Componente principal
-│   └── index.js         # Ponto de entrada
-├── package.json         # Dependências e scripts
-└── README.md           # Este arquivo
-```
-
----
-
 ## 🌟 Destaques do Projeto
 
 ### 🎨 Design System
@@ -175,10 +139,10 @@ portfolio_reactjs/
   <a href="https://github.com/LipzDev" target="_blank">
     <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
   </a>
-  <a href="https://linkedin.com/in/seu-linkedin" target="_blank">
+  <a href="https://linkedin.com/in/lipzdev" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
   </a>
-  <a href="mailto:seu-email@exemplo.com">
+  <a href="mailto:contato.devweb@hotmail.com.com">
     <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
 </div>
