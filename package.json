@@ -19,6 +19,7 @@
     "dev": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "start": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts start",
     "build": "set NODE_OPTIONS=--openssl-legacy-provider && react-scripts build",
+    "build:vercel": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -29,7 +30,7 @@
     ]
   },
   "engines": {
-    "node": ">=18.0.0",
+    "node": "18.x",
     "npm": ">=8.0.0"
   },
   "browserslist": {
