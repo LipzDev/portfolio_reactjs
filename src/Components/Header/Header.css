@@ -1,5 +1,5 @@
 .header {
-  padding: 10px 0;
+  padding: 20px 0;
   position: fixed;
   width: 100%;
   background: #111118;
@@ -13,9 +13,63 @@
 }
 
 .logo a {
-  font-size: 4rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.logo a:hover {
+  transform: translateY(-2px);
+}
+
+.logo-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background: linear-gradient(135deg, #00aeff, #0066cc);
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 174, 255, 0.3);
+  transition: all 0.3s ease;
+}
+
+.logo-icon:hover {
+  transform: rotate(5deg);
+  box-shadow: 0 6px 20px rgba(0, 174, 255, 0.4);
+}
+
+.code-icon {
+  font-size: 2.2rem;
+  font-weight: 700;
   color: white;
+  font-family: "Courier New", monospace;
+}
+
+.logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo-name {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: white;
+  letter-spacing: -0.5px;
+}
+
+.logo-title {
+  font-size: 1.4rem;
   font-weight: 400;
+  color: #00aeff;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 .menu__desktop ul {
@@ -64,6 +118,23 @@
     display: none;
   }
 
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .code-icon {
+    font-size: 1.8rem;
+  }
+
+  .logo-name {
+    font-size: 2rem;
+  }
+
+  .logo-title {
+    font-size: 1.2rem;
+  }
+
   .menu__mobile {
     position: absolute;
     transform: translateX(-200rem);
@@ -72,7 +143,7 @@
     left: 0;
     top: 0;
 
-    background: rgba(17, 17, 24, 1.0);
+    background: rgba(17, 17, 24, 1);
     /* backdrop-filter: blur(20px); */
     width: 100%;
     height: 100vh;
@@ -93,5 +164,28 @@
 
   .menu__mobile a {
     font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .logo-content {
+    gap: 8px;
+  }
+
+  .logo-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .code-icon {
+    font-size: 1.5rem;
+  }
+
+  .logo-name {
+    font-size: 1.8rem;
+  }
+
+  .logo-title {
+    font-size: 1rem;
   }
 }

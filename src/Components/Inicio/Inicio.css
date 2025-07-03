@@ -28,11 +28,6 @@
 }
 
 @media screen and (max-width: 900px) {
-  /* LOGO */
-  .logo a {
-    font-size: 4rem;
-  }
-
   .inicio__text h2 {
     font-size: 2rem;
   }

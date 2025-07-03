@@ -1,8 +1,8 @@
-import React from 'react';
-import { NavLink } from 'react-router-dom';
-import Hamburguer from './Hamburguer/Hamburguer';
-import { OpenMenu as CloseMenu } from './Hamburguer/Hamburguer';
-import './Header.css';
+import React from "react";
+import { NavLink } from "react-router-dom";
+import Hamburguer from "./Hamburguer/Hamburguer";
+import { OpenMenu as CloseMenu } from "./Hamburguer/Hamburguer";
+import "./Header.css";
 
 const Header = () => {
   return (
@@ -10,7 +10,17 @@ const Header = () => {
       <div className="container">
         <div className="header__item">
           <div className="logo">
-            <NavLink to="/">Filipe Dev</NavLink>
+            <NavLink to="/">
+              <div className="logo-content">
+                <div className="logo-icon">
+                  <span className="code-icon">&lt;/&gt;</span>
+                </div>
+                <div className="logo-text">
+                  <span className="logo-name">Filipe</span>
+                  <span className="logo-title">Dev</span>
+                </div>
+              </div>
+            </NavLink>
           </div>
           <nav className="menu__desktop  efeito__header">
             <ul>
@@ -21,9 +31,6 @@ const Header = () => {
               </li>
               <li>
                 <NavLink to="sobre">Sobre</NavLink>
-              </li>
-              <li>
-                <NavLink to="projetos">Projetos</NavLink>
               </li>
               <li>
                 <NavLink to="repositorios">Repositórios</NavLink>
@@ -48,11 +55,6 @@ const Header = () => {
               <li>
                 <NavLink to="sobre" onClick={CloseMenu}>
                   Sobre
-                </NavLink>
-              </li>
-              <li>
-                <NavLink to="projetos" onClick={CloseMenu}>
-                  Projetos
                 </NavLink>
               </li>
               <li>

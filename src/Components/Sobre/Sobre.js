@@ -1,13 +1,12 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import foto1 from '../../Assets/foto.png';
-import Next from '../Next-page/Next';
-import './Sobre.css';
+import React from "react";
+import { Helmet } from "react-helmet";
+import foto1 from "../../Assets/foto.png";
+import Next from "../Next-page/Next";
+import "./Sobre.css";
 
 const Sobre = () => {
-  const birthday = 1998
+  const birthday = 1998;
   const currentDate = new Date().getUTCFullYear() - birthday;
-
 
   return (
     <section className="sobre  efeito__transicao">
@@ -18,14 +17,27 @@ const Sobre = () => {
       <div className="container-w2">
         <div className="sobre__item">
           <div className="sobre__text">
-            <h1>Sobre</h1>
+            <h1>Sobre Mim</h1>
             <p>
-              Tenho {currentDate} anos, sou formado em Análise e Desenvolvimento de
-              Sistemas, meu foco principal é o desenvolvimento web
-              Front-End, mas tenho interesse em adquirir conhecimentos também na área de Back-End com NodeJS! Sou do interior de São Paulo, sigo estudando em busca dos meus objetivos! <br></br><br></br>
-              Principais tecnologias que trabalho atualmente: Typescript, ReactJS, NextJS, GraphQL, Firebase!
+              Tenho {currentDate} anos e sou formado em Análise e
+              Desenvolvimento de Sistemas. Sou apaixonado por criar experiências
+              digitais excepcionais e transformar designs em código funcional e
+              elegante.
+              <br />
+              <br />
+              <strong>Especialização:</strong> Desenvolvimento Front-End com
+              foco em React, TypeScript, Next.js e TailwindCSS. Atualmente estou
+              expandindo meus conhecimentos para o ecossistema Back-End,
+              estudando Node.js, NestJS, TypeORM e PostgreSQL.
+              <br />
+              <br />
+              <strong>Atuação:</strong> Trabalho de forma remota (home office),
+              sempre conectado com as últimas tendências e tecnologias do
+              mercado. Estou em busca constante de novos desafios e
+              oportunidades para crescer profissionalmente e contribuir com
+              projetos inovadores.
             </p>
-            <Next route="/projetos" />
+            <Next route="/repositorios" />
           </div>
 
           <div className="sobre__img">
