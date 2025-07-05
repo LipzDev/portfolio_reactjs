@@ -61,17 +61,9 @@ Portfolio pessoal desenvolvido em React.js com design responsivo e tema dark/lig
    **Para Windows (CMD/PowerShell):**
 
    ```bash
-   set NODE_OPTIONS=--openssl-legacy-provider && npm start
-   # ou
-   set NODE_OPTIONS=--openssl-legacy-provider && yarn start
-   ```
 
-   **Para Linux/Mac:**
+   export set NODE_OPTIONS=--openssl-legacy-provider && yarn start
 
-   ```bash
-   export NODE_OPTIONS=--openssl-legacy-provider && npm start
-   # ou
-   export NODE_OPTIONS=--openssl-legacy-provider && yarn start
    ```
 
 4. **Acesse no navegador**

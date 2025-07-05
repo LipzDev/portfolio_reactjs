@@ -45,8 +45,9 @@
 }
 
 .sobre__content {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
   align-items: center;
   max-height: calc(100vh - 25rem);
   width: 100%;
@@ -58,7 +59,6 @@
   gap: 2rem;
   height: 100%;
   justify-content: space-between;
-  width: 100%;
 }
 
 .sobre__intro {
@@ -227,6 +227,67 @@
   padding-bottom: 1rem;
 }
 
+.sobre__right {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding-top: 2rem;
+}
+
+.sobre__image {
+  position: relative;
+}
+
+.image__container {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.image__container img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: transform 0.3s ease;
+}
+
+.sobre__image:hover .image__container img {
+  transform: scale(1.02);
+}
+
+.image__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 174, 255, 0.1),
+    rgba(0, 102, 204, 0.1)
+  );
+  border-radius: 20px;
+  pointer-events: none;
+}
+
+.image__badge {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #00aeff, #0066cc);
+  color: white;
+  padding: 0.6rem 1.8rem;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 8px 16px rgba(0, 174, 255, 0.3);
+  white-space: nowrap;
+  min-width: max-content;
+}
+
 /* Responsividade */
 @media screen and (min-width: 2560px) {
   .sobre__content {
@@ -239,6 +300,11 @@
 
   .sobre__subtitle {
     font-size: 2.2rem;
+  }
+
+  .image__container img {
+    width: 400px;
+    height: 400px;
   }
 
   .specialization__content {
@@ -272,6 +338,11 @@
   .sobre__subtitle {
     font-size: 1.6rem;
   }
+
+  .image__container img {
+    width: 280px;
+    height: 280px;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -284,10 +355,13 @@
   }
 
   .sobre__content {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
     max-height: none;
     width: 90%;
     margin: 0 auto;
+    gap: 0;
   }
 
   .sobre__header {
@@ -304,6 +378,10 @@
 
   .sobre__left {
     width: 100%;
+  }
+
+  .sobre__right {
+    display: none; /* Esconde a imagem no mobile */
   }
 
   .sobre__cards {

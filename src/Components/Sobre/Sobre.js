@@ -1,5 +1,6 @@
 import React from "react";
 import { Helmet } from "react-helmet";
+import foto1 from "../../Assets/foto.png";
 import Next from "../Next-page/Next";
 import "./Sobre.css";
 
@@ -76,6 +77,18 @@ const Sobre = () => {
 
             <div className="sobre__next">
               <Next route="/repositorios" />
+            </div>
+          </div>
+
+          <div className="sobre__right">
+            <div className="sobre__image">
+              <div className="image__container">
+                <img src={foto1} alt="Filipe Gomes - Desenvolvedor Front-End" />
+                <div className="image__overlay"></div>
+              </div>
+              <div className="image__badge">
+                <span>Front-End Developer</span>
+              </div>
             </div>
           </div>
         </div>
